@@ -15,3 +15,5 @@ export const createHash = (ts: number, privkey: string, pubkey: string) => {
 };
 
 export const handleError = (fn: any) => (...params: any) => fn(...params).catch((err: any) => console.error(`'Woops: ${err}`))
+
+export const getImage = (thumbnail: any) => `${thumbnail.path}.${thumbnail.extension}`
